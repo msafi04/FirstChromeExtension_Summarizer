@@ -1,0 +1,27 @@
+{
+    "name": "Extension 1",
+    "description": "First Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "/images/test16.png",
+        "default_title": "First Extension"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "/images/test16.png",
+        "32": "/images/test32.png",
+        "48": "/images/test48.png"
+    },
+    "permissions": ["scripting", "activeTab", "tabs"],
+    "host_permissions": ["https://sameerr007-abstractive-summarization.hf.space/*", "https://msafi04-abstractive-summarization.hf.space/*"]
+}

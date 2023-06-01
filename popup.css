@@ -1,0 +1,12 @@
+body {
+    min-width: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+.addedText {
+    color: blueviolet;
+    font-size: 20px;
+}
